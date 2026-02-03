@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web - DevLog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img class="logo" src="./Logo.jpg" alt="logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="devlog.html" class="active">DevLog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section class="devlog-section">
+        <div class="log-card">
+            <div class="meta">
+                <span class="badge">RAYCASTING</span>
+            </div>
+            <article>
+                <header>
+                    <h2>Raycasting in 2D Games</h2>
+                </header>
+                <section>
+                    <h3>Introduction</h3>
+                    <p>
+                        Raycasting is a method used to transform a 2D game environment into a 3D space.
+                        This technique casts a ray for each pixel along the width of the screen.
+                    </p>
+                </section>
+                <section>
+                    <h3>How It Works</h3>
+                    <p>
+                        By calculating the distance from the player to the wall using the DDA algorithm,
+                        the length of the ray is determined. This length is then used to calculate the height of the
+                        wall.
+                        Naturally, the further the player is from the wall, the shorter the height of that wall's pixel
+                        will be.
+                        This creates the illusion of three-dimensionality for the player.
+                    </p>
+                </section>
+            </article>
+        </div>
+        <div class="log-card">
+            <div class="meta">
+                <span class="badge">CHALLENGES</span>
+            </div>
+            <article>
+                <header>
+                    <h2>Challenges Faced During the Project</h2>
+                </header>
+                <section>
+                    <h3>Challenge 1: Installing the Raylib Library</h3>
+                    <p>
+                        My first challenge was spending a lot of time installing the Raylib library, which was quite
+                        frustrating.
+                        My mistake was not starting the project with Linux from the beginning.
+                    </p>
+                </section>
+                <section>
+                    <h3>Challenge 2: Understanding the DDA Algorithm</h3>
+                    <p>
+                        My second challenge was the DDA algorithm. While I was able to find the code with the help of a
+                        chatbot,
+                        it took a considerable amount of time to understand how it works and its internal logic.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </section>
+
+</body>
+
+</html>
